@@ -1,0 +1,166 @@
+.post {
+  box-shadow: 0 15px 25px rgba($black, 0.35);
+  background-color: $primary;
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.post__content {
+  margin-bottom: 2rem;
+}
+
+.post__discription {
+  font-size: 1.4rem;
+  color: #d2d2d2;
+}
+
+.post__text {
+  color: $white;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #1c1c1c;
+  padding-bottom: 1rem;
+  a {
+    color: $blue;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  h4 {
+    font-size: 1.15em;
+  }
+
+  h5,
+  h6 {
+    font-size: 1em;
+  }
+  ul,
+  ol,
+  dl {
+    margin-bottom: 2rem;
+  }
+  ol {
+    list-style: decimal;
+    list-style-position: inside;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+.post__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.post__data {
+  display: flex;
+
+  color: #828282;
+  line-height: 1.2rem;
+  a {
+    color: #828282;
+
+    text-transform: uppercase;
+  }
+}
+.post__item {
+  &:not(:last-child):after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    position: relative;
+    top: -2px;
+    margin: 0 1.5rem;
+  }
+}
+
+.post__header {
+  margin: 0 0 2.5rem;
+
+  &--preview {
+    border-radius: 5px;
+    overflow: hidden;
+    margin: -2.5rem -2.5rem 2.5rem;
+  }
+  &--open {
+  }
+}
+
+// Post 2
+
+.post__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: $white;
+  margin-bottom: 1.5rem;
+  a {
+    color: $white;
+    transition: all 0.2s linear;
+  }
+
+  &--mb0 {
+    margin-bottom: 0.4rem;
+  }
+}
+.post__read {
+  font-size: 1.4rem;
+  color: #107eff;
+}
+
+.post__preview {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.post__actions {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: $white;
+
+  a {
+    color: inherit;
+
+    opacity: 0.6;
+    transition: all 0.2s linear;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &--icon {
+    margin-left: 1rem;
+  }
+}
