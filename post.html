@@ -5,7 +5,7 @@ title: Post
 
 <article class="post">
   <div class="post__actions">
-    <a href="">Вернуться назад</a>
+    <a href="index.html">Вернуться назад</a>
     <a href=""
       >Поделиться
       <img
@@ -95,7 +95,7 @@ title: Post
     </div>
 
     <div class="related">
-      <h3 class="related__title">Интересно почитать</h3>
+      <h3 class="post__subtitle">Интересно почитать</h3>
       <ul class="related__list">
         <li class="related__list-item">
           <h4 class="related__list-title">
@@ -107,7 +107,10 @@ title: Post
         </li>
         <li class="related__list-item">
           <h4 class="related__list-title">
-            <a href=""> Как писать код быстро и безболезненно?</a>
+            <a href="">
+              Как писать код быстро и безболезненно?Как писать код быстро и
+              безболезненно?</a
+            >
           </h4>
           <time class="related__list-date" datetime="21-06-2020"
             >21.06.2020</time
@@ -115,7 +118,10 @@ title: Post
         </li>
         <li class="related__list-item">
           <h4 class="related__list-title">
-            <a href=""> Купил новый ноутбук за 150 000 руб </a>
+            <a href="">
+              Купил новый ноутбук за Как писать код быстро и безболезненно?Как
+              писать код быстро и безболезненно? руб
+            </a>
           </h4>
           <time class="related__list-date" datetime="21-06-2020"
             >21.06.2020</time
@@ -131,5 +137,73 @@ title: Post
         </li>
       </ul>
     </div>
+
+    <h3 class="post__subtitle">Обсуждение</h3>
+    <form class="form" action="/" method="post">
+      <div class="form__group">
+        <textarea
+          class="form__control form__control--textarea"
+          name="comment-text"
+          id=""
+          placeholder="Текст комментария"
+        ></textarea>
+        <span class="form__line"></span>
+      </div>
+      <button class="btn btn--blue btn--rounded btn--sm" type="submit">
+        Отправить
+      </button>
+    </form>
+    <ul class="comments">
+      <li class="comments__item">
+        <div class="comments__header">
+          <img
+            class="comments__avatar"
+            src="https://placehold.co/30x30/505050/505050"
+            alt="author"
+          />
+
+          <div class="comments__author">
+            <div class="comments__name">Виталий Хворых</div>
+            <time class="comments__pubdate" datetime="2020-12-16 19:21"
+              >1 неделю назад</time
+            >
+          </div>
+        </div>
+
+        <div class="comments__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse,
+          nostrum! Eaque quis rem a sequi unde recusandae pariatur voluptatum
+          distinctio tempora ut, culpa, fugiat aut vero, aperiam eligendi
+          dignissimos ipsa!
+        </div>
+        <button class="comments__reply" type="button">ответить</button>
+        <ul class="comments">
+          <li class="comments__item">
+            <div class="comments__header">
+              <img
+                class="comments__avatar"
+                src="https://placehold.co/30x30/505050/505050"
+                alt="author"
+              />
+
+              <div class="comments__author">
+                <div class="comments__name">Виталий Хворых</div>
+                <time class="comments__pubdate" datetime="2020-12-16 19:21"
+                  >1 неделю назад</time
+                >
+              </div>
+            </div>
+
+            <div class="comments__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse,
+              nostrum! Eaque quis rem a sequi unde recusandae pariatur
+              voluptatum distinctio tempora ut, culpa, fugiat aut vero, aperiam
+              eligendi dignissimos ipsa!
+            </div>
+            <button class="comments__reply" type="button">ответить</button>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </article>

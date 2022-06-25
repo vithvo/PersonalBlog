@@ -1,14 +1,6 @@
 .related {
   border-bottom: 1px solid #1c1c1c;
-  padding: 3rem 0 0.5rem;
-}
-
-.related__title {
-  font-size: 1.6rem;
-  color: $white;
-  font-weight: 500;
-  margin-bottom: 2rem;
-  line-height: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .related__list {
@@ -18,14 +10,20 @@
 .related__list-item {
   width: 50%;
   margin-bottom: 2.5rem;
+  padding: 0 0.5rem;
 }
 .related__list-title {
   font-size: 1.4rem;
   font-weight: 500;
   color: #f3eba2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   a {
     color: inherit;
   }
 }
 .related__list-date {
+  color: #828282;
+  font-size: 1.2rem;
 }
