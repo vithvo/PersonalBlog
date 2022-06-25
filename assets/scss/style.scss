@@ -13,6 +13,10 @@ body {
     "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -46,3 +50,4 @@ a {
 @import "blocks/work";
 @import "blocks/tags";
 @import "blocks/cabinet";
+@import "blocks/modal";

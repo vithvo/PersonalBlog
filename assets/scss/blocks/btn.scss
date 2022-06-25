@@ -14,21 +14,24 @@
   text-decoration: none;
   transition: all 0.2s linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 
   &--red {
     background-color: $red;
     box-shadow: 0 7px 17px -10px rgba($red, 0.3);
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: darken($red, 10%);
     }
   }
   &--blue {
     background-color: $blue;
     box-shadow: 0 7px 17px -10px rgba($blue, 0.3);
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: darken($blue, 10%);
     }
   }
