@@ -6,7 +6,8 @@
   left: 0;
   z-index: $zimodal;
   background-color: rgba($black, 0.8);
-  display: flex;
+  //display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
