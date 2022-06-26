@@ -6,10 +6,19 @@
   border-radius: 5px;
   overflow: hidden;
   display: flex;
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
 }
 
 .work__preview {
   width: 31rem;
+
+  @include breakpoint($mobile) {
+    width: 100%;
+    height: 15rem;
+  }
 }
 .work__photo {
   width: 100%;
@@ -23,6 +32,10 @@
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
+  @include breakpoint($mobile) {
+    max-width: none;
+    padding: 1.5rem;
+  }
 }
 .work__title {
   font-size: 2.4rem;
@@ -32,6 +45,10 @@
     color: inherit;
   }
   margin-bottom: 3rem;
+
+  @include breakpoint($mobile) {
+    margin-bottom: 1rem;
+  }
 }
 .work__discription {
   font-size: 1.6rem;
@@ -39,9 +56,16 @@
   font-weight: 300;
   line-height: 1.68;
   margin-bottom: 3rem;
+  @include breakpoint($mobile) {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
 }
 
 .work__footer {
   margin-top: auto;
   text-align: right;
+  @include breakpoint($mobile) {
+    text-align: left;
+  }
 }

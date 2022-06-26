@@ -1,3 +1,11 @@
 .main {
   padding: 10rem 0 8rem $zisidebar-width;
+  @include breakpoint($tablet) {
+    padding-left: 0;
+    padding-top: 7rem;
+  }
+
+  @include breakpoint($mobile) {
+    padding-bottom: 5rem;
+  }
 }

@@ -12,10 +12,16 @@
   border: none;
   font-family: inherit;
   font-size: 1.2rem;
-  font-weight: 400;
+
   color: $white;
 
   ::placeholder {
     color: rgba($white, 0.4);
+  }
+
+  @include breakpoint($tablet) {
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    height: 4rem;
   }
 }

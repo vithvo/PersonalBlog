@@ -7,6 +7,20 @@
   z-index: $zisidebar;
   background-color: $primary;
   box-shadow: 5px 0 15px rgba(#050505, 0.1);
+
+  @include breakpoint($tablet) {
+    transform: translateX(-100%);
+    transition: all 0.2s linear;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+    overflow: auto;
+    .show-sidebar & {
+      transform: translateX(0);
+    }
+  }
 }
 
 .sidebar__header {
@@ -18,10 +32,15 @@
     height: 100%;
     object-fit: cover;
   }
+  @include breakpoint($tablet) {
+    height: 10rem;
+  }
 }
 .sidebar__content {
-  padding: 0 2rem;
-  margin-top: -5rem;
+  margin: 0 2rem;
+  @include breakpoint($tablet) {
+    flex-grow: 1;
+  }
 }
 .sidebar__footer {
   display: flex;

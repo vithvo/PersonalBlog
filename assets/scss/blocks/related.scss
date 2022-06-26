@@ -6,11 +6,16 @@
 .related__list {
   display: flex;
   flex-wrap: wrap;
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+  }
 }
 .related__list-item {
   width: 50%;
   margin-bottom: 2.5rem;
   padding: 0 0.5rem;
+  width: 100%;
 }
 .related__list-title {
   font-size: 1.4rem;

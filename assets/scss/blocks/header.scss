@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  letter-spacing: 0.6px;
+
   width: calc(100% - $zisidebar-width);
   background-color: #0d0d0d;
   box-shadow: 0 5px 22px rgba(0, 0, 0, 0.25);
@@ -8,14 +8,24 @@
   right: 0;
   position: fixed;
   z-index: $ziheader;
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
 }
 
 .header__left {
   width: 60%;
+  @include breakpoint($tablet) {
+    width: 40%;
+  }
 }
 
 .header__right {
   justify-content: flex-end;
   display: flex;
   width: 40%;
+
+  @include breakpoint($tablet) {
+    width: 60%;
+  }
 }

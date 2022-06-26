@@ -4,6 +4,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include breakpoint($tablet) {
+    .show-sidebar & {
+      position: relative;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba($black, 0.8);
+        z-index: 100;
+      }
+    }
+  }
 }
 
 .page__title {

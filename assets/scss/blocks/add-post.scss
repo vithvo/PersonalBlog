@@ -4,6 +4,10 @@
   box-shadow: 0 15px 25px rgba($black, 0.45);
   background-color: $secondary;
   border-radius: 5px;
+
+  @include breakpoint($mobile) {
+    padding: 1.5rem;
+  }
 }
 .ass-post__form {
   display: flex;
@@ -12,11 +16,16 @@
 
 .add-post__form-actions {
   display: flex;
-  width: 20%;
+  width: 12rem;
+  flex-shrink: 0;
   justify-content: flex-end;
+  @include breakpoint($mobile) {
+    width: 9rem;
+  }
 }
 
 .add-post__textarea {
+  overflow: hidden;
   height: 26px;
   display: block;
   font-family: inherit;
@@ -26,6 +35,7 @@
   background: transparent;
   resize: none;
   width: 80%;
+  flex-grow: 1;
   &::placeholder {
     color: #d2d2d2;
   }
@@ -47,9 +57,17 @@
   &:hover {
     background-color: darken(#d2d2d2, 10%);
   }
+
+  @include breakpoint($mobile) {
+    width: 3.4rem;
+    height: 3.4rem;
+    background-size: 18px;
+  }
 }
 
 .add-post__send {
+  font-size: 0;
+  color: transparent;
   display: block;
   width: 4.4rem;
   height: 4.4rem;
@@ -59,7 +77,15 @@
   margin-left: 1.5rem;
   cursor: pointer;
   transition: all 0.2s linear;
+  background: $blue url("/assets/images/AddPost/sendbtn.svg") center no-repeat;
+
   &:hover {
     background-color: darken($blue, 10%);
+  }
+  @include breakpoint($mobile) {
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-left: 1rem;
+    background-size: 15px;
   }
 }
