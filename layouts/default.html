@@ -4,14 +4,14 @@
     {{> head }}
   </head>
   <body>
-    <div class="page">
+    <div class="page" id="page">
       {{> header }} {{> sidebar }}
 
       <main class="main">
         <div class="container">{{> body }}</div>
       </main>
     </div>
-    <!-- {{> story-modal }} -->
+    {{> story-modal }} {{> contact-modal }} {{> share-modal }}
     <script src="assets/js/app.js"></script>
   </body>
 </html>

@@ -11,7 +11,7 @@
 }
 .ass-post__form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .add-post__form-actions {
@@ -26,7 +26,7 @@
 
 .add-post__textarea {
   overflow: hidden;
-  height: 26px;
+  height: 34px;
   display: block;
   font-family: inherit;
   font-size: 1.5rem;
@@ -36,6 +36,8 @@
   resize: none;
   width: 80%;
   flex-grow: 1;
+  padding: 0;
+
   &::placeholder {
     color: #d2d2d2;
   }

@@ -4,6 +4,9 @@
 
 html {
   font-size: 62.5%;
+  ::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 body {
@@ -15,9 +18,14 @@ body {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
 
-  &.noscroll,
-  &.show-sidebar {
+  &.noscroll {
     overflow: hidden;
+  }
+
+  @include breakpoint($tablet) {
+    &.show-sidebar {
+      overflow: hidden;
+    }
   }
 }
 

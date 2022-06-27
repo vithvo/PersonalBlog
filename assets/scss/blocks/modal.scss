@@ -12,6 +12,10 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+
+  &.show {
+    display: flex;
+  }
 }
 
 .modal__content {
@@ -22,9 +26,24 @@
   border-radius: 5px;
   position: relative;
 
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: all 0.2s ease-in-out;
+
   &--contact {
     padding-bottom: 2.5rem;
   }
+
+  &--story {
+    padding: 0;
+    background: none;
+  }
+}
+
+.modal__video {
+  display: block;
+  margin: 0 auto;
+  overflow-x: visible;
 }
 
 .modal-close {
@@ -50,6 +69,11 @@
   color: #b2b2b2;
   li {
     margin: 0 0.5rem;
+    @include breakpoint($mobile) {
+      &:first-child {
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   a {
@@ -58,5 +82,9 @@
     &:hover {
       text-decoration: none;
     }
+  }
+
+  @include breakpoint($mobile) {
+    flex-wrap: wrap;
   }
 }

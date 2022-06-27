@@ -1,4 +1,4 @@
-<aside class="sidebar">
+<aside class="sidebar" id="sidebar">
   <div class="sidebar__header">
     <img src="../assets/images/Sidebar/SidebarHeader.jpg" alt="SHeader" />
   </div>
@@ -41,7 +41,7 @@
           <a class="nav__link" href="index.html">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link has-subnav" href="">Статьти</a>
+          <a class="nav__link has-subnav" href="#">Статьти</a>
 
           <ul class="subnav">
             <li>
@@ -79,11 +79,7 @@
     >
       Мои работы
     </button>
-    <button
-      onclick="document.location='contact-modal.html'"
-      type="button"
-      class="btn btn--blue"
-    >
+    <button data-modal="contact-modal" type="button" class="btn btn--blue">
       Написать мне
     </button>
   </div>
