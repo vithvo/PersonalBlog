@@ -139,15 +139,15 @@ table {
   border-spacing: 0;
 }
 
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
@@ -307,9 +307,9 @@ select {
  *    Known issue: inner spacing remains in IE 6.
  */
 button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button; /* 2 */
   cursor: pointer; /* 3 */
   *overflow: visible; /* 4 */
@@ -329,8 +329,8 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
   *height: 13px; /* 3 */
@@ -342,7 +342,7 @@ input[type=radio] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box; /* 2 */
@@ -353,8 +353,8 @@ input[type=search] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -426,7 +426,9 @@ body {
   background-color: #181818;
   font-size: 1.4rem;
   color: #fff;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
 }
 body.noscroll {
@@ -638,7 +640,8 @@ a:hover {
   background: none;
   border: none;
 }
-.burger:before, .burger:after,
+.burger:before,
+.burger:after,
 .burger span {
   display: block;
   width: 100%;
@@ -647,7 +650,8 @@ a:hover {
   position: absolute;
   transition: all 0.2s linear;
 }
-.burger:before, .burger:after {
+.burger:before,
+.burger:after {
   content: "";
 }
 .burger span {
@@ -669,7 +673,8 @@ a:hover {
 .show-sidebar .burger::after {
   transform: rotate(-45deg);
 }
-.show-sidebar .burger:before, .show-sidebar .burger:after {
+.show-sidebar .burger:before,
+.show-sidebar .burger:after {
   top: 50%;
 }
 @media (max-width: 991px) {
@@ -945,21 +950,24 @@ a:hover {
   text-decoration: none;
   transition: all 0.2s linear;
 }
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   text-decoration: none;
 }
 .btn--red {
   background-color: #ed3024;
   box-shadow: 0 7px 17px -10px rgba(237, 48, 36, 0.3);
 }
-.btn--red:hover, .btn--red:focus {
+.btn--red:hover,
+.btn--red:focus {
   background-color: #cd1c11;
 }
 .btn--blue {
   background-color: #3137c9;
   box-shadow: 0 7px 17px -10px rgba(49, 55, 201, 0.3);
 }
-.btn--blue:hover, .btn--blue:focus {
+.btn--blue:hover,
+.btn--blue:focus {
   background-color: #272ca0;
 }
 .btn--rounded {
@@ -1003,7 +1011,12 @@ a:hover {
   top: 0;
   left: 0;
   z-index: 2;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.8)
+  );
 }
 
 .stories__preview {
@@ -1097,7 +1110,7 @@ a:hover {
   width: 4.4rem;
   height: 4.4rem;
   border-radius: 50%;
-  background: #d2d2d2 url("/assets/images/AddPost/addphoto.svg") center no-repeat;
+  background: #d2d2d2 url("../images/addPost/addphoto.svg") center no-repeat;
   cursor: pointer;
   transition: all 0.2s linear;
 }
@@ -1127,7 +1140,7 @@ a:hover {
   margin-left: 1.5rem;
   cursor: pointer;
   transition: all 0.2s linear;
-  background: #3137c9 url("/assets/images/AddPost/sendbtn.svg") center no-repeat;
+  background: #3137c9 url("../images/AddPost/sendbtn.svg") center no-repeat;
 }
 .add-post__send:hover {
   background-color: #272ca0;
